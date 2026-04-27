@@ -1,4 +1,4 @@
-# Entropy as a Hallucinogen
+# Entropy as Hallucinogen
 Entropy-based hallucination detection works —barely. A study on its limits using TruthfulQA
 
 ## On the Limits of Entropy-Based Hallucination Mitigation
@@ -48,6 +48,10 @@ We test:
 | Best (α = 0.50) | 0.2595   |
 | Oracle          | 0.4076   |
 
+## Results Overview
+
+![Accuracy comparison](accuracy.png)
+
 Additional:
 
 * Entropy–correctness correlation: **0.087**
@@ -77,6 +81,13 @@ It correlates weakly with correctness but does not translate into useful decisio
 
 View and run at https://www.kaggle.com/code/blackoutcreed/entropy-as-hallucinogen
 or import the ipynb into kaggle notebook or IDE of your own choice (ensure cuda suppprt)
+
+
+## Limitations
+
+- Evaluated on a single model (FLAN-T5 base)
+- Multiple-choice setting (not free-form generation)
+- Entropy measured at token level only
 
 
 ## Notes
