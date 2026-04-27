@@ -1,0 +1,11 @@
+Baseline Accuracy: 0.2557
+Entropy-only Accuracy: 0.2342
+Hybrid Accuracy: 0.2481
+Best Tuned Accuracy: 0.2595 (alpha=0.50)
+Oracle Accuracy: 0.4076
+
+Entropy–Correctness Correlation: 0.0870
+
+Key Insight:
+Entropy provides weak signal but fails to significantly improve correctness.
+Large oracle gap indicates missing signal.
